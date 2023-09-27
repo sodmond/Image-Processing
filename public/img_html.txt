@@ -1,0 +1,30 @@
+<div style="width:600px; height:850px; background:url('picture0.jpg'); background-repeat:no-repeat; background-size:contain;">
+		<div style="position:absolute; margin-left:220px;"><img src="logo.png" width="150"></div>
+		<div style="width:inherit; position:absolute; margin-top:100px; text-align:center;">
+			<img src="originally-black.png" style="width:500px;">
+		</div>
+
+		<!-- Nickname -->
+		<div style="position:absolute; width:150px; margin-top:300px; margin-left:450px; text-align:center;">
+			<span style="color:#E1CF93; font-size:100%; padding-right:10px; font-family:Barabara; text-transform:uppercase;">Agba <br>Content </br>Creator</span>
+		</div>
+
+		<!-- Traits -->
+		<div style="position:absolute; width:inherit; margin-top:320px;">
+			<div style="color:#E1CF93; font-size:20px; padding-left:20px; font-family:Barabara; text-transform:uppercase;">Originality <br>Traits</div>
+			<ul style="color:#FFF; margin-top:0; font-family:Arial; font-size:13px">
+				<li>Fun</li>
+				<li>Smart</li>
+				<li>Wise Decision Maker</li>
+			</ul>
+		</div>
+
+		<!-- Job & Name -->
+		<div style="position:absolute; width:inherit; margin-top:620px; text-align:center; text-transform:uppercase; color:#FFF;">
+			<div style="font-size:24px;"><span style="color:#E1CF93;">An</span> Original</div>
+			<div style="font-size:40px; font-weight:100;">Social <span style="color:#E1CF93;">Media</span> Manager</div>
+			<div style="font-size:18px; font-weight:900; font-family:OpenSans; text-align:right; margin-right:40px;">
+				<span>Aishat</span>
+			</div>
+		</div>
+	</div>
