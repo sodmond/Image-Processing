@@ -28,7 +28,7 @@
         <div style="width:600px; height:850px; background:url('{{ asset("work/resized/".$imageInfo['original_image'])}}'); background-repeat:no-repeat; background-size:cover;">
             <div style="position:absolute; margin-left:245px;"><img src="{{ asset('img/logo.png') }}" width="100"></div>
             <div style="width:inherit; position:absolute; margin-top:100px; text-align:center;">
-                <img src="{{ asset('img/originally-black.png') }}" style="width:500px;">
+                <img src="{{ asset('img/originally-black0.png') }}" style="width:500px;">
             </div>
     
             <!-- Nickname -->
