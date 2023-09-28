@@ -26,9 +26,9 @@
     </head>
     <body>
         <div style="width:700px; height:990px; background:url('{{ asset("work/resized/".$imageInfo['original_image'])}}'); background-repeat:no-repeat; background-size:cover;">
-            <div style="position:absolute; margin-left:245px;"><img src="{{ asset('img/logo.png') }}" width="100"></div>
-            <div style="width:inherit; position:absolute; margin-top:100px; text-align:center;">
-                <img src="{{ asset('img/originally-black0.png') }}" style="width:500px;">
+            <div style="position:absolute; margin-left:305px; margin-top:10px;"><img src="{{ asset('img/logo.png') }}" width="75"></div>
+            <div style="width:inherit; position:absolute; margin-top:80px; text-align:center;">
+                <img src="{{ asset('img/originally-black0.png') }}" style="width:450px;">
             </div>
     
             <!-- Nickname -->
