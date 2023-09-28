@@ -25,20 +25,20 @@
         </style>
     </head>
     <body>
-        <div style="width:600px; height:850px; background:url('{{ asset("work/resized/".$imageInfo['original_image'])}}'); background-repeat:no-repeat; background-size:cover;">
+        <div style="width:700px; height:990px; background:url('{{ asset("work/resized/".$imageInfo['original_image'])}}'); background-repeat:no-repeat; background-size:cover;">
             <div style="position:absolute; margin-left:245px;"><img src="{{ asset('img/logo.png') }}" width="100"></div>
             <div style="width:inherit; position:absolute; margin-top:100px; text-align:center;">
                 <img src="{{ asset('img/originally-black0.png') }}" style="width:500px;">
             </div>
     
             <!-- Nickname -->
-            <div style="position:absolute; width:150px; margin-top:300px; margin-left:450px; text-align:center;">
+            <div style="position:absolute; width:150px; margin-top:370px; margin-left:530px; text-align:center;">
                 @php $nickname = explode(' ', $imageInfo['nickname']) @endphp
                 <span style="color:#E1CF93; font-size:100%; padding-right:10px; font-family:Barabara; text-transform:uppercase;">@foreach($nickname as $nick) {{ $nick }}<br> @endforeach</span>
             </div>
     
             <!-- Traits -->
-            <div style="position:absolute; width:inherit; margin-top:320px;">
+            <div style="position:absolute; width:inherit; margin-top:350px;">
                 <div style="color:#E1CF93; font-size:20px; padding-left:20px; font-family:Barabara; text-transform:uppercase;">Originality <br>Traits</div>
                 <ul style="color:#FFF; margin-top:0; font-family:Arial, Helvetica, sans-serif; font-size:13px">
                     @foreach (explode(',', $imageInfo['traits']) as $trait)
@@ -48,7 +48,7 @@
             </div>
     
             <!-- Job & Name -->
-            <div style="position:absolute; width:inherit; margin-top:620px; text-align:center; text-transform:uppercase; color:#FFF; font-family:PlayfairDisplay;">
+            <div style="position:absolute; width:inherit; margin-top:680px; text-align:center; text-transform:uppercase; color:#FFF; font-family:PlayfairDisplay;">
                 <div style="font-size:24px;"><span style="color:#E1CF93;">An</span> Original</div>
                 <div style="font-size:40px; font-weight:100; color:#E1CF93;">{{ strtoupper($imageInfo['job']) }}</div>
                 <div style="font-size:18px; font-weight:900; text-align:right; margin-right:40px;">
@@ -57,17 +57,17 @@
             </div>
 
             <!-- Barcode -->
-    		<div style="position:absolute; width:inherit; margin-top:780px; text-align:right;">
+    		<div style="position:absolute; width:inherit; margin-top:920px; text-align:right;">
 	    		<img src="{{ asset('img/barcode.png') }}" style="width:80px; margin-right:50px;">
 		    </div>
 
             <!-- Drink Responsibly -->
-		    <div style="position:absolute; width:inherit; margin-top:820px;">
+		    <div style="position:absolute; width:inherit; margin-top:950px;">
 	    		<img src="{{ asset('img/drink-responsibly.png') }}" style="width:90px; margin-left:30px;">
     		</div>
 
 		    <!-- Website link -->
-    		<div style="position:absolute; width:inherit; margin-top:800px; text-align:center; color:#FFF; font-size:14px; font-family: Arial;">
+    		<div style="position:absolute; width:inherit; margin-top:940px; text-align:center; color:#FFF; font-size:14px; font-family: Arial;">
                 www.originallyblack.com<br>{{ '@trophystout' }}
 	    	</div>
         </div>
