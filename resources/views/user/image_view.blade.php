@@ -41,18 +41,21 @@
             <div style="position:absolute; width:inherit; margin-top:350px;">
                 <div style="color:#E1CF93; font-size:20px; padding-left:20px; font-family:Barabara; text-transform:uppercase;">Originality <br>Traits</div>
                 <ul style="color:#FFF; margin-top:0; font-family:Arial, Helvetica, sans-serif; font-size:13px">
-                    @foreach (explode(',', $imageInfo['traits']) as $trait)
-                        <li>{{ ucwords($trait) }}</li>
-                    @endforeach
+                    @php 
+                        $traits = explode(',', $imageInfo['traits']);
+                        for ($i=0; $i < 3; $i++) {
+                            echo '<li>'. ucwords($traits[$i]) .'</li>';
+                        }
+                    @endphp
                 </ul>
             </div>
     
             <!-- Job & Name -->
-            <div style="position:absolute; width:inherit; margin-top:680px; text-align:center; text-transform:uppercase; color:#FFF; font-family:PlayfairDisplay;">
-                <div style="font-size:24px;"><span style="color:#E1CF93;">An</span> Original</div>
-                <div style="font-size:40px; font-weight:100; color:#E1CF93;">{{ strtoupper($imageInfo['job']) }}</div>
-                <div style="font-size:18px; font-weight:900; text-align:right; margin-right:40px;">
-                    <span style="font-family:OpenSans;">{{ $imageInfo['name'] }}</span>
+            <div style="position:absolute; width:inherit; margin-top:680px; text-align:center; text-transform:uppercase; color:#FFF; font-family:Arial, Helvetica, sans-serif;">
+                <div style="font-size:24px; font-family:PlayfairDisplay;"><span style="color:#E1CF93;">An</span> Original</div>
+                <div style="font-size:40px; font-weight:100; color:#E1CF93; font-family:PlayfairDisplay;">{{ strtoupper($imageInfo['job']) }}</div>
+                <div style="font-size:18px; font-weight:900; text-align:right; margin-right:40px; font-family:Barabara;">
+                    <span style="font-family:Barabara;">{{ $imageInfo['name'] }}</span>
                 </div>
             </div>
 
