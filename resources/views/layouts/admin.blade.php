@@ -239,7 +239,7 @@
     @stack('custom-scripts')
 </body>
 @else
-<body class="sidebar-toggled" style="background: #000;">
+<body class="bg-gradient-light sidebar-toggled">
 
     @yield('content')
     

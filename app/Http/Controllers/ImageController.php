@@ -46,6 +46,9 @@ class ImageController extends Controller
         $imagePath = public_path('/work/original');
         $imageResizePath = public_path('/work/resized');
         $img = ImageResize::make($imageFile->path());
+        if ($img->width() > $img->height()) {
+            $img->rotate(-90);
+        }
         $img->resize(600, 850, function($constraint) {
             $constraint->aspectRatio();
         })->save($imageResizePath.'/'.$imageFileName);

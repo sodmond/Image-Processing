@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-10 col-lg-12 col-md-9">
-            <div class="card o-hidden border-o shadow-lg my-5">
+            <div class="card o-hidden border-0 shadow-lg my-5" style="background:#000;">
 
                 <div class="card-body p-0">
                     <div class="row">
@@ -15,7 +15,7 @@
                                 <div class="text-center">
                                     <a href="{{route('login')}}"><img src="{{ asset('img/logo.png') }}" style="max-width:150px;"></a>
                                     <p>&nbsp;</p>
-                                    <h1 class="h4 text-gray-900 mb-4">Login</h1>
+                                    <h1 class="h4 text-white mb-4">Login</h1>
                                 </div>
                                 <form class="user" method="POST" action="{{ route('login') }}">
                                     @csrf
