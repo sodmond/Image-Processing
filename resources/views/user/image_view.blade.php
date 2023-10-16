@@ -32,14 +32,14 @@
             </div>
     
             <!-- Nickname -->
-            <div style="position:absolute; width:150px; margin-top:370px; margin-left:530px; text-align:center;">
+            <div style="position:absolute; width:160px; margin-top:370px; margin-left:530px; text-align:right; font-size:100%;">
                 @php $nickname = explode(' ', $imageInfo['nickname']) @endphp
-                <span style="color:#E1CF93; font-size:100%; padding-right:10px; font-family:Barabara; text-transform:uppercase;">@foreach($nickname as $nick) {{ $nick }}<br> @endforeach</span>
+                <span style="color:#E1CF93; padding-right:10px; font-family:Barabara; text-transform:uppercase;">@foreach($nickname as $nick) {{ $nick }} @endforeach</span>
             </div>
     
             <!-- Traits -->
             <div style="position:absolute; width:inherit; margin-top:350px;">
-                <div style="color:#E1CF93; font-size:20px; padding-left:20px; font-family:Barabara; text-transform:uppercase;">Originality <br>Traits</div>
+                <div style="color:#E1CF93; font-size:23px; padding-left:20px; font-family:Barabara; text-transform:uppercase;">Originality <br>Traits</div>
                 <ul style="color:#FFF; margin-top:0; font-family:Arial, Helvetica, sans-serif; font-size:13px">
                     @php 
                         $traits = explode(',', $imageInfo['traits']);
@@ -61,7 +61,7 @@
 
             <!-- Barcode -->
     		<div style="position:absolute; width:inherit; margin-top:920px; text-align:right;">
-	    		<img src="{{ asset('img/barcode.png') }}" style="width:80px; margin-right:50px;">
+	    		<img src="{{ asset('img/barcode.png') }}" style="width:90px; margin-right:50px;">
 		    </div>
 
             <!-- Drink Responsibly -->
