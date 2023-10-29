@@ -33,7 +33,7 @@
     
             <!-- Nickname -->
             <div style="position:absolute; width:160px; margin-top:370px; margin-left:530px; text-align:right; font-size:100%;">
-                <div style="color:#FFF; font-size:15px; font-family:PlayfairDisplay; font-weight:400; text-transform:uppercase; text-align:center;">Nickname</div>
+                <div style="color:#FFF; font-size:15px; font-family:PlayfairDisplay; font-weight:400; text-transform:uppercase;">Nickname</div>
                 @php $nickname = explode(' ', $imageInfo['nickname']) @endphp
                 <span style="color:#E1CF93; padding-right:10px; font-family:Barabara; text-transform:uppercase;">@foreach($nickname as $nick) {{ $nick }} @endforeach</span>
             </div>
