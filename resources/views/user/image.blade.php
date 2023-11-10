@@ -67,7 +67,7 @@
                                     <input type="file" class="form-control" name="cover" id="cover">
                                     <div class="my-2" style="max-height:200px; overflow-y:scroll; vertical-align:middle;">
                                         <a href="{{ url('storage/'.$product->cover) }}" target="_blank">
-                                            <img class="img-fluid" src="{{ asset('storage/'.$product->cover) }}" alt="Product Cover Image">
+                                            <img class="img-fluid" src="{{ asset('public/storage/'.$product->cover) }}" alt="Product Cover Image">
                                         </a>
                                     </div>
                                 </div>
@@ -89,12 +89,12 @@
                         <div class="row mb-4">
                             <label class="col-lg-2 text-lg-right">Original Image</label>
                             <div class="col-lg-10 p-3">
-                                <img class="img-fluid" src="{{ asset('work/resized/'.$image->original_image) }}" alt="Original Image">
+                                <img class="img-fluid" src="{{ asset('public/work/resized/'.$image->original_image) }}" alt="Original Image">
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="col-lg-10 offset-lg-2">
-                                <a class="btn btn-danger col" href="{{ url('work/processed/'.$image->processed_image) }}" target="_blank">Download Processed Image</a>
+                                <a class="btn btn-danger col" href="{{ url('public/work/processed/'.$image->processed_image) }}" target="_blank">Download Processed Image</a>
                             </div>
                         </div>
                     </div>

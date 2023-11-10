@@ -11,10 +11,10 @@
 
     <title>{{ $title }} | {{ config('app.name', 'Image Processing App') }}</title>
 
-    <link href="{{ asset('img/favicon.png') }}" rel="icon" type="image/png">
+    <link href="{{ asset('public/img/favicon.png') }}" rel="icon" type="image/png">
 
     <!-- Custom fonts for this template-->
-    <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('public/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
@@ -24,9 +24,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
 
     <!-- Custom styles for this template-->
-    <link rel="stylesheet" href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/jquery-te-1.4.0.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/custom.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('public/css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('public/css/jquery-te-1.4.0.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('public/css/custom.css')}}" rel="stylesheet">
 </head>
 
 @if (isset(Auth::user()->name))
@@ -41,7 +41,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('user.dashboard') }}">
                 <div class="sidebar-brand-icon">
-                    <img src="{{ asset('img/favicon.png') }}" alt="Trophy Stout" style="max-width:50px;">
+                    <img src="{{ asset('public/img/favicon.png') }}" alt="Trophy Stout" style="max-width:50px;">
                 </div>
                 <div class="sidebar-brand-text mx-3">Account</div>
             </a>
@@ -220,19 +220,19 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('public/vendor/jquery/jquery.min.js')}}"></script>
     <script src="https://code.jquery.com/jquery.min.js" charset="utf-8"></script>
-    <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('public/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="{{asset('vendor/jquery-easing/jquery.easing.min.js')}}"></script>
-    <script src="{{asset('js/jquery-te-1.4.0.min.js')}}"></script>
+    <script src="{{asset('public/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+    <script src="{{asset('public/js/jquery-te-1.4.0.min.js')}}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="{{asset('js/sb-admin-2.min.js')}}"></script>
+    <script src="{{asset('public/js/sb-admin-2.min.js')}}"></script>
 
     <!-- Page level custom scripts -->
-    <script src="{{asset('js/custom.js')}}"></script>
+    <script src="{{asset('public/js/custom.js')}}"></script>
 
     <!-- Latest compiled and minified Bootstrap-select JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
@@ -244,11 +244,11 @@
     @yield('content')
     
     <!-- Bootstrap core JavaScript-->
-    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('public/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('public/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="{{asset('vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+    <script src="{{asset('public/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
     <!-- Custom scripts for all pages-->
 @endif

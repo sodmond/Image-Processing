@@ -13,7 +13,7 @@
                         <div class="col-lg-6">
                             <div class="p-5">
                                 <div class="text-center">
-                                    <a href="{{route('login')}}"><img src="{{ asset('/img/logo.png') }}" style="max-width:150px;"></a>
+                                    <a href="{{route('login')}}"><img src="{{ asset('public/img/logo.png') }}" style="max-width:150px;"></a>
                                     <p>&nbsp;</p>
                                     <h1 class="h4 text-white mb-4">Login</h1>
                                 </div>
