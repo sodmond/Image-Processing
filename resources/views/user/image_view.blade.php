@@ -5,19 +5,19 @@
         <style type="text/css">
             @font-face {
                 font-family: "Barabara";
-                src: url("{{ asset('fonts/Barabara.otf') }}");
+                src: url("{{ asset('public/fonts/Barabara.otf') }}");
             }
             @font-face {
                 font-family: "SensaBrush";
-                src: url("{{ asset('fonts/SensaSans-RegularDemo.otf') }}");
+                src: url("{{ asset('public/fonts/SensaSans-RegularDemo.otf') }}");
             }
             @font-face {
                 font-family: "OpenSans";
-                src: url("{{ asset('fonts/OpenSans.ttf') }}");
+                src: url("{{ asset('public/fonts/OpenSans.ttf') }}");
             }
             @font-face {
                 font-family: "PlayfairDisplay";
-                src: url("{{ asset('fonts/PlayfairDisplay.ttf') }}");
+                src: url("{{ asset('public/fonts/PlayfairDisplay.ttf') }}");
             }
             body {
                 font-family: Arial, Helvetica, sans-serif;
@@ -25,10 +25,10 @@
         </style>
     </head>
     <body>
-        <div style="width:700px; height:990px; background:url('{{ asset("work/resized/".$imageInfo['original_image'])}}'); background-repeat:no-repeat; background-size:cover; background-position: center;">
-            <!--<div style="position:absolute; margin-left:305px; margin-top:10px;"><img src="{{ asset('img/logo.png') }}" width="75"></div>-->
+        <div style="width:700px; height:990px; background:url('{{ asset("public/work/resized/".$imageInfo['original_image'])}}'); background-repeat:no-repeat; background-size:cover; background-position: center;">
+            <!--<div style="position:absolute; margin-left:305px; margin-top:10px;"><img src="{{ asset('public/img/logo.png') }}" width="75"></div>-->
             <div style="width:inherit; position:absolute; margin-top:20px; text-align:center;">
-                <img src="{{ asset('img/originally-black0.png') }}" style="width:600px; height:auto;">
+                <img src="{{ asset('public/img/originally-black0.png') }}" style="width:600px; height:auto;">
             </div>
     
             <!-- Nickname -->
@@ -62,18 +62,18 @@
 
             <!-- Barcode -->
     		<div style="position:absolute; width:inherit; margin-top:920px; text-align:right;">
-	    		<img src="{{ asset('img/barcode.png') }}" style="width:90px; margin-right:50px;">
+	    		<img src="{{ asset('public/img/barcode.png') }}" style="width:90px; margin-right:50px;">
 		    </div>
 
             <!-- Powered By -->
 		    <div style="position:absolute; width:inherit; margin-top:860px;">
                 <p style="padding-left: 20px;"><span style="color:#FFF; font-size:14px;">Powered by</span><br>
-                <img src="{{ asset('img/logo.png') }}" width="75"></p>
+                <img src="{{ asset('public/img/logo.png') }}" width="75"></p>
     		</div>
 
 		    <!-- Drink Responsibly -->
     		<div style="position:absolute; width:300px; margin-top:950px; margin-left:200px; text-align:center; color:#FFF; font-size:14px; font-family: Arial;">
-                <img src="{{ asset('img/drink-responsibly.png') }}" style="width:120px; margin-left:30px;">
+                <img src="{{ asset('public/img/drink-responsibly.png') }}" style="width:120px; margin-left:30px;">
 	    	</div>
         </div>
     </body>
